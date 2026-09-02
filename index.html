@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الحكمة | بيع واستئجار الكتب</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Layout -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    <i class="fa-solid fa-book-open text-warning me-2"></i>مكتبة الحكمة
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="books.html">المتجر والأرشيف</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">تسجيل الدخول</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">إنشاء حساب</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider / Carousel Section (المطلب 6) -->
+    <section class="slider-section my-4 container">
+        <div id="mainSlider" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="سلايدر المكتبة 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>أحدث الكتب والروايات العالمية</h3>
+                        <p>استمتع بالقراءة مع إمكانية الشراء أو الاستئجار الشهري بسهولة.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="سلايدر المكتبة 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>خدمة التأجير الأكاديمي والبرمجي</h3>
+                        <p>وفّر تكاليف المراجع وتصفح كتب البرمجة والشبكات أسبوعياً أو شهرياً.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content & Aside Layout (المطلب 2 و 7) -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Main Content Area -->
+            <main class="col-lg-8">
+                <section class="mb-5">
+                    <h2 class="border-bottom border-warning pb-2">عن مكتبة الحكمة</h2>
+                    <p class="lead text-muted">نوفر لك منصة شامالة للبحث، الشراء، واستئجار أفضل الكتب والمراجع في مختلف العلوم والتخصصات بأسعار مناسبة وبأعلى جودة خدمة.</p>
+                </section>
+
+                <!-- قسم الأحدث من الكتب -->
+                <section>
+                    <h3 class="mb-4">أبرز الكتب المقترحة</h3>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 custom-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">مقدمة في شبكات الحاسوب</h5>
+                                    <p class="card-text">مرجع شامل لإدارة وتوزيع الشبكات وأساليب التوجيه والحماية.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-success">للبيع: $25</span>
+                                        <span class="badge bg-info text-dark">للإيجار: $5/شهر</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pb-3">
+                                    <button class="btn btn-primary w-100 open-modal-btn" data-title="مقدمة في شبكات الحاسوب" data-desc="دليل مكثف للمبادئ الأساسية في تصميم وتكوين الشبكات الشجرية والمحلية.">معاينة وتأكيد الطلب</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 custom-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">البرمجة الشجرية بلغة C++</h5>
+                                    <p class="card-text">شرح مفصل لبنيات البيانات المتقدمة وتطبيقات الخوارزميات.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-success">للبيع: $30</span>
+                                        <span class="badge bg-info text-dark">للإيجار: $7/شهر</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pb-3">
+                                    <button class="btn btn-primary w-100 open-modal-btn" data-title="البرمجة الشجرية بلغة C++" data-desc="يتناول طرق إدارة الذاكرة، المؤشرات، وأنماط التصميم المتقدمة.">معاينة وتأكيد الطلب</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Aside Sidebar (المطلب 2) -->
+            <aside class="col-lg-4 mt-4 mt-lg-0">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-dark text-white">إحصائيات المكتبة</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            إجمالي الكتب المتاحة
+                            <span class="badge bg-primary rounded-pill">1,250</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            الكتب المستأجرة حالياً
+                            <span class="badge bg-warning text-dark rounded-pill">340</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            أعضاء المكتبة
+                            <span class="badge bg-success rounded-pill">890</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-3 bg-light rounded border">
+                    <h5 class="text-secondary"><i class="fa-solid fa-bullhorn me-2"></i>تنويه هام</h5>
+                    <p class="small text-muted mb-0">يمكن لكل عضو استئجار كحد أقصى 3 كتب في وقت واحد لمدة تصل إلى 30 يوماً قابلة للتقسيط والتمديد.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Modals (المطلب 10 - نافذتان مدمجتان) -->
+    <div class="modal fade" id="bookModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBookTitle">تفاصيل الكتاب</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalBookDesc"></p>
+                    <hr>
+                    <div class="mb-3">
+                        <label class="form-label">نوع العملية:</label>
+                        <select class="form-select" id="actionType">
+                            <option value="buy">شراء نهائي</option>
+                            <option value="rent">استئجار شهري</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    <button type="button" class="btn btn-success" id="confirmOrderBtn">تأكيد الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container (المطلب 9) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage">
+                    تم إنجاز العملية بنجاح!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Layout -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">جميع الحقوق محفوظة &copy; 2026 - مشروع مقرر تصميم الويب</p>
+            <small class="text-muted">تم التطوير بواسطة نصرالله دهمان</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

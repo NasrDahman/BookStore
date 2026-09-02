@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | مكتبة الحكمة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome Requirement -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html"><i class="fa-solid fa-book-open text-warning me-2"></i>مكتبة الحكمة</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="books.html">المتجر والأرشيف</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-5">تواصل مع إدارة المكتبة</h2>
+
+        <div class="row g-4">
+            <!-- Font Awesome Icons List (المطلب 4) -->
+            <div class="col-md-5">
+                <div class="bg-light p-4 rounded h-100 border">
+                    <h4 class="mb-4">معلومات الاتصال</h4>
+                    <p><i class="fa-solid fa-location-dot text-primary me-2 fs-5"></i> اليمن - صنعاء / أمانة العاصمة</p>
+                    <p><i class="fa-solid fa-phone text-success me-2 fs-5"></i> +967 770 000 000</p>
+                    <p><i class="fa-solid fa-envelope text-danger me-2 fs-5"></i> info@hikmah-library.com</p>
+                    <hr>
+                    <h5>حسابات التواصل الاجتماعي</h5>
+                    <div class="d-flex gap-3 fs-3 mt-3">
+                        <a href="#" class="text-primary"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-info"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-danger"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-success"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <form id="contactForm" class="card p-4 border-0 shadow-sm" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label">الاسم:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">البريد الإلكتروني:</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">الرسالة:</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال الرسالة <i class="fa-solid fa-paper-plane ms-1"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

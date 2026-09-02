@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد | مكتبة الحكمة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html"><i class="fa-solid fa-book-open text-warning me-2"></i>مكتبة الحكمة</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-6">
+                <div class="card shadow-sm p-4 border-0">
+                    <h3 class="text-center mb-4"><i class="fa-solid fa-user-plus text-success me-2"></i>إنشاء حساب عضوية</h3>
+                    
+                    <form id="registerForm" novalidate>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">الاسم الكامل:</label>
+                            <input type="text" class="form-control" id="fullName" required placeholder="مثال: نصرالله دهمان">
+                            <div class="invalid-feedback">يرجى كتابة الاسم الكامل.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label">البريد الإلكتروني:</label>
+                            <input type="email" class="form-control" id="regEmail" required placeholder="user@domain.com">
+                            <div class="invalid-feedback">يرجى إدخال عنوان بريد إلكتروني صحيح.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="regPassword" class="form-label">كلمة المرور:</label>
+                            <input type="password" class="form-control" id="regPassword" required minlength="6">
+                            <div class="invalid-feedback">كلمة المرور يجب ألا تقل عن 6 خانات.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">تأكيد كلمة المرور:</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <div class="invalid-feedback" id="passMatchError">كلمتا المرور غير متطابقتين.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 py-2">تسجيل العضوية</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
